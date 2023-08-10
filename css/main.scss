@@ -1,0 +1,90 @@
+form {
+    margin-top: 1rem;
+}
+
+.popup-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 10rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secComplementColor);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    .progress-bar {
+        width: calc(25rem - 8rem);
+        height: 3rem;
+        accent-color: var(--secondaryColor);
+    }
+
+}
+
+.file-chooser-btn {
+    outline: var(--secondaryColor);
+    border: 2px solid var(--secondaryColor);
+    cursor: pointer;
+    font-family: var(--primaryFont);
+}
+
+.game-list-container {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    width: 100%;
+    min-height: 100%;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+    min-height: 20rem;
+    padding: .5rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    justify-content: space-between;
+
+    ul {
+        list-style: none;
+    }
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: center;
+        column-gap: 1rem;
+        align-self: flex-end;
+    }
+}
+
+.game-banner-preview {
+    width: 100%;
+    object-fit: contain;
+}
+
+#game-banner-svg {
+    position: absolute;
+    z-index: -1;
+}
+
+.warning-file {
+    outline-color: red;
+    border: 2px solid red;
+}
+
+.warning-file::file-selector-button {
+    outline: red;
+    border: 2px solid red;
+    background-color: red;
+}

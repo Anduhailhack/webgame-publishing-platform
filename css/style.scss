@@ -1,0 +1,176 @@
+:root {
+    --primaryFont: "Open Sans", sans-serif;
+    --primaryColor: #F2982C;
+    --secondaryColor: rgb(65, 181, 77);
+    --accentColor: #6D8A64;
+    --secComplementColor: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primaryFont);
+}
+
+.container {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // border: 2px solid red;
+    height: 100vh;
+}
+
+.btn,
+input::file-selector-button {
+    background-color: var(--secondaryColor);
+    color: var(--secComplementColor);
+    padding: .25rem .5rem;
+    border: 2px solid var(--secondaryColor);
+    font-family: var(--primaryFont);
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: red;
+    border: 2px solid red;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem 0;
+}
+
+.tab-choice {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    min-height: 3rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+main {
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+    height: 85vh;
+    width: 80vw;
+    padding: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+aside {
+    position: absolute;
+    left: 0px;
+    top: 10vh;
+    width: 20vw;
+    height: 85vh;
+    background-color: var(--secondaryColor);
+}
+
+.header {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 10vh;
+    background-color: #ffffff;
+    box-shadow: rgba(65, 181, 77, 0.45) 0px 25px 20px -20px;
+    z-index: 1;
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5vh;
+    background-color: #ffffff;
+    box-shadow: rgba(65, 181, 77, 0.45) 0px 10px 50px;
+    padding: 1rem;
+}
+
+form,
+progress-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    row-gap: .5rem;
+    padding: 3rem;
+    max-width: 500px;
+    width: 100%;
+    // border: 2px solid blue;
+    box-shadow:
+        /*rgba(60, 64, 67, 0.3)*/
+        rgba(65, 181, 77, 0.3) 0px 1px 2px 0px,
+        /*rgba(60, 64, 67, 0.15)*/
+        rgba(65, 181, 77, 0.15) 0px 2px 6px 2px;
+}
+
+.form-control-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: var(--primaryFont);
+}
+
+.caption {
+    color: var(--secondaryColor);
+    align-self: center;
+}
+
+
+.form-control-in-txt {
+    font-family: var(--primaryFont);
+    outline-color: var(--secondaryColor);
+    padding: .25rem;
+}
+
+.game-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10rem;
+    border: 2px solid var(--secondaryColor);
+    cursor: pointer;
+
+    svg {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.warning-pic-uploader {
+    fill: red;
+}
+
+.warning-pic-container {
+    border: 2px solid red;
+}
+
+.warning-in-txt {
+    outline-color: red;
+}
+
+.warning {
+    color: red;
+}
